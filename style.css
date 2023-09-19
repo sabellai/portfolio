@@ -10,6 +10,10 @@ section.main div.mim {
   overflow: hidden;
 }
 
+body#index {
+  overflow: hidden;
+}
+
 img.projects {
   max-width: 50%;
   margin: 15px;
