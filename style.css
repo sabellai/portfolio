@@ -10,6 +10,11 @@ section.main div.mim {
   overflow: hidden;
 }
 
+section.left p {
+  width: 90%;
+  margin: 5%;
+}
+
 body#index {
   overflow: hidden;
 }
