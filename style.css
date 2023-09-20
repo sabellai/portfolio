@@ -10,8 +10,8 @@ section.main div.mim {
   overflow: hidden;
 }
 
-section.left p {
-  width: 90%;
+section.left p, section.left h2 {
+  max-width: 90%;
   margin: 5%;
 }
 
