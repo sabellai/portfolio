@@ -4,6 +4,12 @@
 */
 
 @media only screen and (min-width: 720px) {		/* stijlregels voor browserschermen > 720px en < 1024px */
+	section.left {
+	float: left;
+	width: 20%;
+	height: 100%;
+	}
+	
 	img.projects {
 		margin: 15px;
 		margin-left: 30px;
@@ -58,6 +64,69 @@
 		border-radius: 10px;
 	}
 }
+
+/* stijlregels for mobiel */
+		img.projects {
+		margin: 15px;
+		margin-left: 30px;
+	}
+	
+	section.main div#contact p {
+		font-size: 22px;
+		padding-right: 15px;
+	}
+	
+	section.main div#contact img {
+		max-height: 400px;
+		max-width: 300px;
+	}
+	
+	div.mim h1,
+	div.mim h2,
+	section.main div.mim h2 {
+	font-size: 42px;
+	}
+	
+	div.mim a,
+		div.mim p {
+		font-size: 26px;
+	}
+	
+	section.navbar {	
+		min-height: 30px;
+	}
+		
+	section.navbar a {
+		font: 22px;
+	}
+	
+	section.left p {
+		font-size: 22px;
+	}
+	
+	header#header-text {
+		font-size: 104px;
+	}
+	
+	header#header-text {
+		margin-top: 50px;
+	}
+	
+	*::-webkit-scrollbar {
+		width: 16px;
+	}
+
+	*::-webkit-scrollbar-thumb {
+		border-radius: 10px;
+	}
+	
+	section.left {
+		width: 1fr;
+		height: 20%;
+	}	
+
+
+/* stijlregels for allebei */
 
 /*mim = most important message*/
 section.main div.mim {
@@ -208,10 +277,7 @@ section.navbar a:hover {
 }
 
 section.left {
-	height: 100%;
-	width: 20%;
 	background-color: #BDAC91;
-	float: left;
 	overflow-y: scroll;
 	position: fixed;
 	z-index: -1;
