@@ -5,9 +5,15 @@
 
 @media only screen and (min-width: 720px) {		/* stijlregels voor browserschermen > 720px en < 1024px */
 	section.left {
-	float: left;
-	width: 20%;
-	height: 100%;
+		float: left;
+		max-width: 20%;
+		height: 100%;
+	}
+	
+	section.main {
+		min-height: 1024px;
+		width: 80%;
+		float: right;
 	}
 	
 	img.projects {
@@ -66,6 +72,12 @@
 }
 
 /* stijlregels for mobiel */
+
+	section.main {
+		min-height: 100%;
+		width: 100%;
+		float: center;
+		}
 
 	section.left {
 		width: 100%;
@@ -137,10 +149,15 @@ section.main div.mim {
 	overflow: hidden;
 }
 
+section.main {
+	margin-top: 5%;
+	overflow: auto;
+}
+
 	/* literally everything with border radius 12 ever */
 	img.projects,
 	img.badges,
-	div.welcome,
+	div#welcome,
 	section.main div#contact,
 	section.main div#contact img,
 	section.main div {
@@ -307,14 +324,6 @@ img.aboutme {
 	padding-top: 10%;
 }
 
-section.main {
-	min-height: 1024px;
-	width: 80%;
-	float: right;
-	margin-top: 5%;
-	overflow: auto;
-}
-
 header#header-text {
 	text-align: center;
 	z-index: 1;
@@ -328,6 +337,9 @@ div#welcome {
 	margin-left: 10%;
 	width: 80%;
 	max-height: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 h2 {
