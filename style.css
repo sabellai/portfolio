@@ -75,7 +75,7 @@
 
 	section.main {
 		min-height: 100%;
-		width: 100%;
+		min-width: 100%;
 		float: none;
 		}
 
