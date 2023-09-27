@@ -155,8 +155,9 @@ section.main {
 }
 
 section.navbar {
-	display: 
+	display: absolute;
 	position: fixed;
+	color: red;
 }
 
 	/* literally everything with border radius 12 ever */
