@@ -154,12 +154,6 @@ section.main {
 	overflow: auto;
 }
 
-section.navbar {
-	position: absolute;
-	top: 0px;
-	left: 0px;
-	color: red;
-}
 
 	/* literally everything with border radius 12 ever */
 	img.projects,
@@ -282,9 +276,11 @@ html {
 }
 
 section.navbar {
-	background-color: #BDAC91;
+	background-color: #BDAC91;`
+	color: red;
 	width: 100%;
 	z-index: 3;
+	position: fixed;
 }
 
 section.navbar li {
