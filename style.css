@@ -80,8 +80,7 @@
 		}
 
 	section.left {
-		width: 100%;
-		max-height: 25%;
+		display: none;
 		align-items: flex-end;
 	}	
 
@@ -112,6 +111,9 @@
 	}
 	
 	section.navbar {	
+		position: fixed;
+		top: 0px;
+		left: 0px;
 		min-height: 30px;
 	}
 		
@@ -197,7 +199,7 @@ section.main div.mim a {
 }
 
 section.main div#contact p {
-	width: 80%;
+	max-width: 80%;
 	margin-left: 5%;
 	margin-right: 5%;
 }
@@ -205,6 +207,7 @@ section.main div#contact p {
 section.main div#contact img {
 	margin-left: 5%;
 	margin-top: 5%;
+	max-width: 80%;
 	}
 
 section.main div#contact {
