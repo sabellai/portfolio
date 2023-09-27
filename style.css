@@ -154,6 +154,10 @@ section.main {
 	overflow: auto;
 }
 
+section.navbar {
+	position: sticky;
+}
+
 	/* literally everything with border radius 12 ever */
 	img.projects,
 	img.badges,
