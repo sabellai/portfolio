@@ -159,12 +159,18 @@ section.main div.mim {
 	overflow: hidden;
 }
 
+#contactpage {
+	left: 0px;
+	margin-left: 15%;
+	margin-right: 15%;
+	width: 80%
+}
+
 section.main {
 	top: 5%;
 	position: absolute;
 	overflow: auto;
 	margin-top: 5%;
-	padding-top: 5%;
 }
 
 
