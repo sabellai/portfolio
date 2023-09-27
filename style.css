@@ -155,8 +155,7 @@ section.main {
 }
 
 section.navbar {
-	display: absolute;
-	position: fixed;
+	position: absolute;
 	color: red;
 }
 
