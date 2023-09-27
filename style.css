@@ -155,7 +155,8 @@ section.main {
 }
 
 section.navbar {
-	position: sticky;
+	display: 
+	position: fixed;
 }
 
 	/* literally everything with border radius 12 ever */
