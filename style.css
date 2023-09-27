@@ -91,6 +91,12 @@
 		margin-left: 30px;
 	}
 	
+	img.badges {
+		min-width: 20%;
+		min-height: 20%;
+		margin: 2%;
+}
+	
 	section.main div#contact p {
 		font-size: 22px;
 		padding-right: 15px;
