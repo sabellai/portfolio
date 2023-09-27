@@ -152,8 +152,11 @@ section.main div.mim {
 }
 
 section.main {
-	margin-top: 5%;
+	top: 5%;
+	position: absolute;
 	overflow: auto;
+	margin-top: 5%;
+	padding-top: 5%;
 }
 
 
