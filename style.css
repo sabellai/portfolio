@@ -4,7 +4,16 @@ section.main div.mim {
 	max-height: none;
 	overflow: hidden;
 }
+section.navbar a {
+	font-family: 'Cherry Bomb One', cursive;
+}
+h2 {
+	font-family: 'Fredoka', sans-serif;
+}
 
+p, #header-text {
+	font-family: 'Dongle', sans-serif;
+}
 
 @media only screen and (min-width: 720px) {		/* stijlregels voor browserschermen > 720px en < 1024px */
 	body {
