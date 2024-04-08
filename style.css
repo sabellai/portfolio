@@ -4,6 +4,11 @@
 */
 
 @media only screen and (min-width: 720px) {		/* stijlregels voor browserschermen > 720px en < 1024px */
+	
+	iframe {
+		min-height: 700px;
+	}
+	
 	section.left {
 		max-width: 20%;
 		position: absolute;
@@ -30,11 +35,6 @@
 	section.main div#contact img {
 		max-height: 400px;
 		max-width: 300px;
-	}
-	
-	div.longer {
-		min-height: 600px;
-		max-height: 900px;
 	}
 	
 	div.mim h1,
@@ -78,7 +78,11 @@
 }
 
 @media only screen and (max-width: 719px) { /* stijlregels for mobiel */
-
+	
+	iframe {
+		min-height: 450px;
+	}
+	
 	section.main {
 		min-height: 100%;
 		min-width: 100%;
@@ -181,8 +185,11 @@ div {
 }
 
 iframe {
-	height: 100%;
-	width: 100%;
+	border-radius: 12px;
+	margin-left: 5%;
+	margin-bottom: 50px;
+	max-height: 100%;
+	width: 80%;
 }
 
 div#welcome header {
@@ -207,15 +214,15 @@ section.main {
 }
 
 
-	/* literally everything with border radius 12 ever */
-	img.projects,
-	img.badges,
-	div#welcome,
-	section.main div#contact,
-	section.main div#contact img,
-	section.main div {
-		border-radius: 12px;
-	}
+/* literally everything with border radius 12 ever */
+img.projects,
+img.badges,
+div#welcome,
+section.main div#contact,
+section.main div#contact img,
+section.main div {
+	border-radius: 12px;
+}
 
 section.left p, section.left h2 {
 	max-width: 90%;
@@ -228,12 +235,6 @@ body#index {
 
 img.projects {
 	max-width: 50%;
-}
-
-img.badges {
-	max-width: 10%;
-	max-height: 10%;
-	margin: 2%;
 }
 
 section#contact.main {
@@ -255,9 +256,12 @@ section.main div#contact p {
 }
 
 section.main div#contact img {
-	margin-left: 5%;
+	margin-left: 10%;
 	margin-top: 5%;
-	max-width: 80%;
+	min-width: 20%;
+	max-width: 50%;
+	height: auto;
+	padding: 0px;
 	}
 
 section.main div#contact {
