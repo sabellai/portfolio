@@ -17,10 +17,6 @@
 		width: 80%;
 	}
 	
-	div {
-		max-height: 150px;
-	}
-	
 	img.projects {
 		margin: 15px;
 		margin-left: 30px;
@@ -34,6 +30,11 @@
 	section.main div#contact img {
 		max-height: 400px;
 		max-width: 300px;
+	}
+	
+	div.longer {
+		min-height: 600px;
+		max-height: 900px;
 	}
 	
 	div.mim h1,
@@ -93,7 +94,7 @@
 		align-items: flex-end;
 	}	
 
-		img.projects {
+	img.projects {
 		margin: 15px;
 		margin-left: 30px;
 	}
@@ -112,6 +113,10 @@
 	section.main div#contact img {
 		max-height: 400px;
 		max-width: 300px;
+	}
+	
+	div.longer {
+		height: 450px;
 	}
 	
 	div.mim h1,
@@ -169,6 +174,15 @@ section.main div.mim {
 p {
 	margin: 5%;
 	margin-top: 5px;
+}
+
+div {
+	max-height: 150px;
+}
+
+iframe {
+	height: 100%;
+	width: 100%;
 }
 
 div#welcome header {
