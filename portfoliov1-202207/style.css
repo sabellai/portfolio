@@ -1,0 +1,150 @@
+/* this is the main color scheme for this website: https://coolors.co/palette/618ba5-d3bfb2-755643-a57b61 */
+
+@media only screen and (max-width: 1900px) {
+  #created {
+    position:relative;
+    top:-650px;
+    left:460px;
+  }
+}
+
+@media only screen and (max-width: 2000px) {
+  #created {
+    position:relative;
+    top:-680px;
+    left:607px;
+  }
+}
+
+html {
+	width: 100%;
+	height: 1700px;
+}
+* {
+	margin-left: 0px;
+	margin-right: 0px
+}
+div {
+	background-color: #EFE7E3;
+	margin-bottom: 16px;
+	margin-left: 2%;
+	margin-right: 2%;
+	border-radius: 12px;
+	width: 65%;
+}
+div.maincn {
+	background-color: #EFE7E3;
+	margin-bottom: 16px;
+	margin-left: 2%;
+	margin-right: 2%;
+	border-radius: 12px;
+	height: 320px;
+	width: 63.5%;
+	padding: 10px;
+	overflow: auto;
+}
+img.contact {
+	border-radius: 55px;
+	height: auto;
+	width: 33%;
+	margin-top: 2%;
+	margin-left: 33%;
+}
+section {
+	margin-right: 33%;
+	width: 67%;
+}
+.header {
+	padding: 20px;
+}
+.column {
+	width: 30%;
+	float: right;
+	background-color: #EFE7E3;
+	border-radius: 12px;
+	margin-top: 12px;
+	margin-right: 16px;
+	margin-left: 32px;
+}
+
+@media screen and (max-width: 600px) {
+	.column, .column.side, .column.middle {
+		width: 100%;
+	}
+}
+body {
+	font-family: 'Josefin Sans', sans-serif;
+	background-color: #d3bfb2;
+}
+
+a:link {
+	text-decoration: none;
+}
+
+h2, h3 {
+	font-family: 'Quicksand', sans-serif;
+	text-align:center;
+	margin-left: auto;
+	margin-right:auto;
+	color: #436376;
+	text-decoration: none;
+}
+h1 {
+	font-family: 'Quicksand', sans-serif;
+	margin-left: 30%;
+	margin-right: 30%;
+	margin-top: 25px;
+	margin-bottom: 1px;
+	width: 50%;
+	font-size: 157px;
+	color: #436376;
+	text-decoration: none;
+	text-shadow: 4px 4px 1px #608BA5;
+}
+p {
+	font-size: 18px;
+	color: #a57b61;
+	margin-left: 8px;
+	margin-bottom: 8px;
+}
+a:link {
+	color: #9b7559;
+}
+a:visited {
+	color: #9b7559;
+}
+a:hover {
+	color: #9b7559;
+}
+#subpageimg {
+	margin-left: 16px;
+	margin-top: 8px;
+	width: 300px;
+	height: 250;
+	border-radius: 75px;
+}
+.me {
+	width: 33%;
+	height: auto;
+	margin-top: 2%;
+	margin-left: 33%;
+	border-width: 7px;
+	border-style:solid;
+	border-image: url("me_border.gif") 8 fill round;
+}
+* {
+		scrollbar-width: auto;
+		scrollbar-color: #a57b61 #618ba5;
+	}
+	*::-webkit-scrollbar {
+		width: 16px;
+	}
+	*::-webkit-scrollbar-track {
+		background: #618ba5;
+	}
+	*::-webkit-scrollbar-thumb {
+		background-color: #a57b61;
+		border-radius: 10px;
+		border: 3px solid #755643;
+	}
+* {cursor: url(https://cur.cursors-4u.net/cursors/cur-3/cur239.ani), url(https://cur.cursors-4u.net/cursors/cur-3/cur239.png), auto !important;}
