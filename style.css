@@ -1,3 +1,13 @@
+/* indexTESTING.html */
+article.resume {
+	display: flex;
+	flex-direction: column;
+}
+
+.resumportant {
+	color: #C51529;
+}
+
 /* main palette:
  https://coolors.co/palette/c51529-fe817d-703434-e58265-d36951-cd5d5c-bdac91-a47063-2ea098-61b8cc
 	required colours (lightest to darkest): #FFCEC0 #FFAE97 #C35B3D #A03B1E
@@ -228,11 +238,11 @@ section.left p, section.left h2 {
 	max-width: 90%;
 	margin: 5%;
 }
-
+/*
 body#index {
 	overflow: hidden;
 }
-
+*/
 img.projects {
 	max-width: 50%;
 }
