@@ -1,23 +1,23 @@
 body {
-	background: #632912;
+	background-color: #632912;
 	color: #a6ced8;
 }
 
 .light-mode {
-	background: #a6ced8;
+	background-color: #a6ced8;
 	color: #632912;
 }
 
 .primary {
-	background: #bf442b;
+	background-color: #bf442b;
 }
 
 .secondary {
-	background: #33b7d1;
+	background-color: #33b7d1;
 }
 
 .secondary {
-	background: #fbc48e;
+	background-color: #fbc48e;
 }
 
 .h1, .h2, .header {
