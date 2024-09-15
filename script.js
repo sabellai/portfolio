@@ -57,3 +57,4 @@ function tb8_pisi() {
 
   tb8_TID = setTimeout(tb8_pisi, tb8_speed); // waits tb8_speed amount of time before restarting
 }
+tb8_pisi();
