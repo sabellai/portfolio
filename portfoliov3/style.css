@@ -1,5 +1,43 @@
-body {
+* {
+	margin: 0px;
+}
+
+html {
+	height: 100%;
+    width: 100%;
+}
+
+p, h3, h2, h1, header {
+	margin: 5px;
+}
+
+@media only screen and (min-width: 720px) { /* FOR NOT PHONES */
+
+	section.right, section.main {
+		top: 70px;
+	}
+
+	section.right div:last-of-type {
+		margin-bottom: 100px;
+	}
+
+}
+
+@media only screen and (max-width: 719px) { /* FOR PHONES */
+
+	section.right {
+		display: none; /* This will need a fix later in the sense that there will have to be an extra, hidden "about me" page, that only appears on mobile. Because otherwise, people can't find anything about me on phone. */
+	}
+}
+
+body, section.main {
 	background-color: #632912;
+	color: #a6ced8;
+	height: 100%;
+}
+
+section.right, section.navbar {
+	background-color: #331104;
 	color: #a6ced8;
 }
 
@@ -16,18 +54,143 @@ body {
 	background-color: #33b7d1;
 }
 
-.secondary {
+.accent {
 	background-color: #fbc48e;
 }
 
-.h1, .h2, .header {
-  font-family: "Monofett", monospace;
-  font-weight: 400;
-  font-style: normal;
+h1, h2 {
+	font-family: "Monofett", monospace;
+	font-weight: 400;
+	font-style: normal;
+	color: #bf442b;
 }
 
-.p, .h3 {
-  font-family: "Potta One", system-ui;
-  font-weight: 400;
-  font-style: normal;
+p, h3 {
+	font-family: "Potta One", system-ui;
+	font-weight: 400;
+	font-style: normal;
 }
+
+img, div {
+	border-radius: 12px;
+}
+
+div {
+	background-color: #33b7d1CC;
+	max-width: 800px;
+	max-height: 600px;
+	margin: 20px;
+}
+
+section.right {
+	width: 20%;
+	right: 0;
+	height: 100%;
+	overflow-y: scroll;
+    position: fixed;
+}
+
+	h3.right {
+		display: inline-block;
+	}
+
+	img.logo {
+		display: inline-block;
+		text-align: right;
+		width: 30px;
+		height: 30px;
+		margin-left: 10px;
+	}
+
+	img.aboutme {
+		width: 60%;
+		height: 80%;
+		margin: 20px;
+	}
+
+	section.right ul li {
+		padding: 5px;
+		list-style-image: url('list style image.png');
+	}
+
+section.main {
+	position: absolute;
+	min-height: 1024px;
+	width: 80%;
+}
+
+section.navbar {	
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	height: 70px;
+	width: 100%;
+}
+
+	section.navbar ul {
+		background-color: #FBC48E;
+		margin-right: 10px;
+		width: 210px;
+		margin-left: 80px;
+		height: 30px;
+		margin-top: 20px;
+	}
+
+	section.navbar li {
+		display: inline-block;
+		margin-top: -5px;
+	}
+
+	section.navbar a {
+		text-decoration: none;
+		color: #632912;
+	}
+
+	section.navbar a:hover {
+		color: #bf442b;
+	}
+
+	img.lightswitch {
+		width: 30px;
+		height: 30px;
+		display: inline-block;
+	}
+
+div#welcome {
+	margin: auto;
+	background-color: #bf442bCC;
+}
+
+	header#header-text {
+		font-size: 104px;
+		margin-top: 50px;
+		text-align: center;
+		color: #a6ced8;
+		text-shadow: 3px 3px #33b7d1;
+		font-family: "Monofett", monospace;
+		font-weight: 400;
+		font-style: normal;
+	}
+
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #fbc48e #bf442b;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 16px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #bf442b;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #fbc48e;
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+  }
