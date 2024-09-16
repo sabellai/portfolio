@@ -1,1 +1,3 @@
-portfoliov3/.vs/
+/.vs/*
+/.vs
+.vs/slnx.sqlite

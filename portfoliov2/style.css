@@ -3,6 +3,11 @@
 	required colours (lightest to darkest): #FFCEC0 #FFAE97 #C35B3D #A03B1E
 */
 
+div#outdated {
+	margin-left: 10%;
+	width: 80%;
+}
+
 @media only screen and (min-width: 720px) {		/* stijlregels voor browserschermen > 720px en < 1024px */
 	
 	iframe {
