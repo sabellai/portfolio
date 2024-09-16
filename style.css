@@ -1,440 +1,251 @@
-/* main palette:
- https://coolors.co/palette/c51529-fe817d-703434-e58265-d36951-cd5d5c-bdac91-a47063-2ea098-61b8cc
-	required colours (lightest to darkest): #FFCEC0 #FFAE97 #C35B3D #A03B1E
-*/
+* {
+	margin: 0px;
+}
 
-@media only screen and (min-width: 720px) {		/* stijlregels voor browserschermen > 720px en < 1024px */
-	
-	iframe {
-		min-height: 700px;
-	}
-	
-	section.left {
-		max-width: 20%;
-		position: absolute;
-		height: 100%;
-	}
-	
-	section.main {
-		position: absolute;
-		min-height: 1024px;
-		left: 20%;
-		width: 80%;
-	}
-	
-	img.projects {
-		margin: 15px;
-		margin-left: 30px;
-	}
-	
-	section.main div#contact p {
-		font-size: 22px;
-		padding-right: 15px;
-	}
-	
-	section.main div#contact img {
-		max-height: 400px;
-		max-width: 300px;
-	}
-	
-	div.mim h1,
-	div.mim h2,
-	section.main div.mim h2 {
-	font-size: 42px;
-	}
-	
-	div.mim a,
-		div.mim p {
-		font-size: 26px;
-	}
-	
-	section.navbar {	
-		min-height: 30px;
-	}
-		
-	section.navbar a {
-		font: 22px;
-	}
-	
-	section.left p {
-		font-size: 22px;
-	}
-	
-	header#header-text {
-		font-size: 104px;
-	}
-	
-	header#header-text {
-		margin-top: 50px;
-	}
-	
-	*::-webkit-scrollbar {
-		width: 16px;
+html {
+	height: 100%;
+    width: 100%;
+}
+
+input, p, h3, h2, h1, header {
+	margin: 5px;
+}
+
+@media only screen and (min-width: 720px) { /* FOR NOT PHONES */
+
+	section.right, section.main {
+		top: 70px;
 	}
 
-	*::-webkit-scrollbar-thumb {
-		border-radius: 10px;
+	div:last-of-type {
+		margin-bottom: 100px;
+	}
+
+}
+
+@media only screen and (max-width: 719px) { /* FOR PHONES */
+
+	section.right {
+		display: none; /* This will need a fix later in the sense that there will have to be an extra, hidden "about me" page, that only appears on mobile. Because otherwise, people can't find anything about me on phone. */
 	}
 }
 
-@media only screen and (max-width: 719px) { /* stijlregels for mobiel */
-	
-	iframe {
-		min-height: 450px;
-	}
-	
-	section.main {
-		min-height: 100%;
-		min-width: 100%;
-		float: none;
-		}
-
-	h2 {
-		font-size: 20px;
-	}
-
-	section.left {
-		display: none;
-		align-items: flex-end;
-	}	
-
-	img.projects {
-		margin: 15px;
-		margin-left: 30px;
-	}
-	
-	img.badges {
-		min-width: 20%;
-		min-height: 20%;
-		margin: 2%;
-}
-	
-	section.main div#contact p {
-		font-size: 22px;
-		padding-right: 15px;
-	}
-	
-	section.main div#contact img {
-		max-height: 400px;
-		max-width: 300px;
-	}
-	
-	div.longer {
-		height: 450px;
-	}
-	
-	div.mim h1,
-	div.mim h2,
-	section.main div.mim h2 {
-	font-size: 42px;
-	}
-	
-	div.mim a,
-		div.mim p {
-		font-size: 26px;
-	}
-	
-	section.navbar {	
-		position: fixed;
-		top: 0px;
-		left: 0px;
-		min-height: 30px;
-	}
-		
-	section.navbar a {
-		font: 22px;
-	}
-	
-	section.left p {
-		font-size: 22px;
-	}
-	
-	header#header-text {
-		font-size: 104px;
-	}
-	
-	header#header-text {
-		margin-top: 50px;
-	}
-	
-	*::-webkit-scrollbar {
-		width: 16px;
-	}
-
-	*::-webkit-scrollbar-thumb {
-		border-radius: 10px;
-	}
+body, section.main {
+	background-color: #632912;
+	color: #a6ced8;
+	height: 100%;
 }
 
-/* stijlregels for allebei */
-
-/*mim = most important message*/
-section.main div.mim {
-	background-color: #A03B1E;
-	max-height: none;
-	overflow: hidden;
+section.right, section.navbar {
+	background-color: #331104;
+	color: #a6ced8;
 }
 
-p {
-	margin: 5%;
-	margin-top: 5px;
+.light-mode {
+	background-color: #a6ced8;
+	color: #632912;
+}
+
+.primary {
+	background-color: #bf442b;
+}
+
+.primary h2, .primary h1 {
+	color: #a6ced8;
+}
+
+.secondary {
+	background-color: #33b7d1;
+}
+
+.accent {
+	background-color: #fbc48e;
+}
+
+h1, h2 {
+	font-family: "Monofett", monospace;
+	font-weight: 400;
+	font-style: normal;
+	color: #bf442b;
+}
+
+label, input, p, h3 {
+	font-family: "Potta One", system-ui;
+	font-weight: 400;
+	font-style: normal;
+}
+
+a {
+	text-decoration: none;
+	color: #bf442b;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #fbc48e;
+}
+
+a#now {
+	color: #a6ced8;
+}
+
+img, div, input, button {
+	border-radius: 12px;
 }
 
 div {
-	max-height: 150px;
+	background-color: #33b7d1CC;
+	max-width: 800px;
+	max-height: 600px;
+	margin: 20px;
+	overflow-y: auto;
+	overflow-x: hidden;
 }
 
-iframe {
-	border-radius: 12px;
-	margin-left: 5%;
-	margin-bottom: 50px;
-	max-height: 100%;
+section.right {
+	width: 25%;
+	right: 0;
+	height: 100%;
+	overflow-y: scroll;
+    position: fixed;
+}
+
+	h3.right {
+		display: inline-block;
+	}
+
+	img.logo {
+		display: inline-block;
+		text-align: right;
+		width: 30px;
+		height: 30px;
+		margin-left: 10px;
+	}
+
+	img.aboutme {
+		width: 60%;
+		height: 80%;
+		margin: 20px;
+	}
+
+	section.right ul li {
+		padding: 5px;
+		list-style-image: url('list style image.png');
+	}
+
+section#projects div {
 	width: 80%;
+	max-height: 60%;
+	margin: auto;
+	margin-top: 5%;
 }
 
-div#welcome header {
-	margin: 5%;
-	margin-left: auto;
-	margin-right: auto;
-	text-align: center;
-}
-
-#contactpage {
-	left: 0px;
-	margin-left: 15%;
-	margin-right: 15%;
-	width: 80%
+img.projects {
+	float: right;
+	max-height: 60%;
+	max-width: 80%;
+	display: inline-block;
+	margin: 10px;
 }
 
 section.main {
-	top: 5%;
 	position: absolute;
-	overflow: auto;
-	margin-top: 5%;
+	min-height: 1024px;
+	width: 75%;
+	/*background-image: url('background-.png');
+	background-repeat: repeat;
+	background-position: center; 
+	the concept is to have my art repeat over and over again as you scroll, to make the website more lively and less empty. but i need more art */
 }
 
-
-/* literally everything with border radius 12 ever */
-img.projects,
-img.badges,
-div#welcome,
-section.main div#contact,
-section.main div#contact img,
-section.main div {
-	border-radius: 12px;
+section.navbar {	
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	height: 70px;
+	width: 100%;
 }
 
-section.left p, section.left h2 {
-	max-width: 90%;
-	margin: 5%;
-}
-/*
-body#index {
-	overflow: hidden;
-}
-*/
-img.projects {
-	max-width: 50%;
-}
-
-section#contact.main {
-	width: 80%;
-	float: none;
-	margin-top: 5%;
-	margin-left: 10%;
-	margin-right: 10%;
-}
-
-section.main div.mim a {
-	color: #FFAE97;
-}
-
-section.main div#contact p {
-	max-width: 80%;
-	margin-left: 5%;
-	margin-right: 5%;
-}
-
-section.main div#contact img {
-	margin-left: 10%;
-	margin-top: 5%;
-	min-width: 20%;
-	max-width: 50%;
-	height: auto;
-	padding: 0px;
+	section.navbar ul {
+		background-color: #FBC48E;
+		margin-right: 10px;
+		width: 210px;
+		margin-left: 20px;
+		height: 30px;
+		margin-top: 20px;
 	}
 
-section.main div#contact {
-	margin-left: 5%;
-	margin-bottom: 2%;
-	width: 80%;
-	max-height: none;
-	background-color: #BDAC91;
-	overflow-y: auto;
-}
+	section.navbar li {
+		display: inline-block;
+		margin-top: -5px;
+	}
 
-section.main div {
-	margin-left: 5%;
-	margin-bottom: 2%;
-	width: 80%;
-	max-height: 5%;
-	background-color: #FFCEC0;
-	overflow-y: auto;
-}
+	section.navbar a {
+		text-decoration: none;
+		color: #632912;
+	}
 
-section.main div p a {
-	margin-left: 0px;
-}
+	section.navbar a:hover {
+		color: #bf442b;
+	}
 
-section.main div a,
-section.main div h2 a {
-	color: #703434;
-	margin-left: 0px;
-}
-
-section.main div h2 a {
-	text-decoration: none;
-}
-
-section.main div h2 {
-	color: #703434;
-}
-
-section.main div p,
-section.main div h1,
-section.main div h2,
-section.main div a {
-	margin-left: 5%;
-}
-
-div.mim h1,
-div.mim h2,
-section.main div.mim h2 {
-	color: #ffffff;
-}
-
-
-div.mim a {
-	color: #FFAE97;
-}
-
-div.mim p {
-	color: #ffffff;
-}
-
-* {
-	margin: 0px;
-	padding: 0px;
-}
-
-section.main,
-html {
-	background-color: #E58265;
-}
-
-section.navbar {
-	background-color: #BDAC91;
-	width: 100%;
-	z-index: 3;
-	position: fixed;
-}
-
-section.navbar li {
-	display: inline;
-}
-
-section.navbar a {
-	margin-left: 5%;
-	font-family: 'Cherry Bomb One', cursive;
-	color: #703434;
-	text-decoration: none;
-}
-
-section.navbar a:hover {
-	color: #9b252f;
-}
-
-section.left {
-	background-color: #BDAC91;
-	overflow-y: scroll;
-	position: fixed;
-	z-index: -1;
-}
-
-section.left:hover {
-	overflow-y: auto;
-}
-
-section.left p {
-	color: #A47063;
-	font-weight: bold;
-}
-
-section.left h1,
-section.left h2 {
-	color: #703434;
-}
-
-img.aboutme {
-	min-width: 60%;
-	max-width: 90%;
-	height: auto;
-	padding-left: 5%;
-	padding-top: 10%;
-}
-
-header#header-text {
-	text-align: center;
-	z-index: 1;
-	color: #ffeeee;
-	text-shadow: 3px 3px #9b252f;
-}
+	.lightswitch {
+		width: 25px;
+		height: 25px;
+		display: inline-block;
+		margin-left: -30px;
+		margin-top: 2px;
+		padding: 2px;
+		border: none;
+	}
 
 div#welcome {
-	text-align: center;
-	background-color: #A03B1E;
-	margin-left: 10%;
+	margin: auto;
+	background-color: #bf442bCC;
 	width: 80%;
-	max-height: none;
-	display: flex;
-	align-items: center;
+	height: 40%;
 }
 
-h2 {
-	font-family: 'Fredoka', sans-serif;
-}
+	@font-face {
+		font-family: billo;
+		src: url(https://dl.dropbox.com/s/klv8tmajlqrb2xz/BILLO___.TTF);
+		}
 
-p,
-#header-text {
-	font-family: 'Dongle', sans-serif;
-}
+	header#header-text {
+		font-size: 104px;
+		margin-top: 50px;
+		text-align: center;
+		color: #a6ced8;
+		text-shadow: 3px 3px #33b7d1;
+		font-family: billo;
+	}
 
-h1,
-h2,
-p {
-	margin-left: 5px;
-}
-
-img.icon {
-	max-width: 90%;
-	max-height: 90%;
+article.resume div {
+	width: 80%;
+	max-height: 60%;
+	overflow: auto;
+	margin: auto;
+	margin-top: 20px;
 }
 
 /* ===== Scrollbar CSS ===== */
-/* Firefox */
-* {
-	scrollbar-width: auto;
-	scrollbar-color: #A47063 #703434;
-}
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #fbc48e #bf442b;
+  }
 
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 16px;
+  }
 
+  *::-webkit-scrollbar-track {
+    background: #bf442b;
+  }
 
-/* Chrome, Edge, and Safari */
-*::-webkit-scrollbar-track {
-	background: #E58265;
-}
-
-*::-webkit-scrollbar-thumb {
-	background-color: #A47063;
-	border: 3px solid #703434;
-}
+  *::-webkit-scrollbar-thumb {
+    background-color: #fbc48e;
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+  }
