@@ -22,50 +22,81 @@
 					<h2>@Resume!</h2>
 					<p>I've racked up some experience in the last few years. You can see everything I've done below this box.<br>Would you like to filter?</p>
 					<div class="checkboxes">
-						<input type="checkbox" id="tech" data-filter="technology"><label for="tech">Technology</label><br>
-						<input type="checkbox" id="art" data-filter="art"><label for="ent">Art</label><br>
+						<input type="checkbox" id="tech" data-filter="technology" class="checkbox"><label for="tech">Technology</label><br>
+						<input type="checkbox" id="art" data-filter="art" class="checkbox"><label for="art">Art</label><br>
+						</div>
 					</div>
-					<input type="submit" value="Submit">
-					</div>
-				<div>
+				<div class="experience-container" data-category="art">
 					<h2>@GBK Entertainment</h2><br>
 					<h3>2023 - Present</h3>
 					<p>Professionally trained in dance, singing, rapping, acting, MC-ing, modeling, composing. I started in August of 2023, and I'm still training.</p>
+					<div data-category="art"> </div>
 					</div>
-				<div>
+				<div class="experience-container" data-category="art">
 					<h2>@Meervaart Jong</h2><br>
 					<h3>2023 - Present</h3>
 					<p>Professional training in streetdance at Meervaart Jong. Still ongoing.</p>
+					<div data-category="art"> </div>
 					</div>
-				<div>
+				<div class="experience-container" data-category="art">
 					<h2>@Amsterdam Dance Centre</h2><br>
 					<h3>2022 - 2023</h3>
 					<p>Training in streetdance.</p>
+					<div data-category="art"> </div>
 					</div>
-				<div>
+				<div class="experience-container" data-category="tech">
 					<h2>@Metis Montessori Lyceum</h2><br>
 					<h3>2021 - 2027</h3>
 					<p><a target="_blank" href="https://hetmml.nl/vakken/coderclass/">Completed several programming language courses</a> whilst doing the normal high school courses.</p>
+					<div data-category="technology"> </div>
 					</div>
-				<div>
+				<div class="experience-container" data-category="art">
 					<h2>@Koninklijk Theater Carre Amsterdam</h2><br>
 					<h3>2018</h3>
 					<p>Performed in front of a live audience, as well as national TV, on remembrance day.</p>
+					<div data-category="art"> </div>
 					</div>
-				<div>
+				<div class="experience-container" data-category="art">
 					<h2>@Meervaart (Jong)</h2><br>
 					<h3>2017 - 2021</h3>
 					<p>Professional training in streetdance and theatre at Meervaart Jong. Performed streetdance and theatre at Theater de Meervaart 1-2 times per year.</p>
+					<div data-category="art"> </div>
 					</div>
-				<div>
+				<div class="experience-container" data-category="art">
 					<h2>@DOS Amsterdam</h2><br>
 					<h3>2017 - 2019</h3>
-					<p>Professional training in athletics. Competed in athletic championships, of which I always won between first and third place.
-</p>
+					<p>Professional training in athletics. Competed in athletic championships, of which I always won between first and third place.</p>
+					<div data-category="art"> </div>
 					</div>
+				</article>
+				<script>
+					const filterButtons = document.querySelectorAll('.checkboxes input[type="checkbox"]');
+					const experienceContainers = document.querySelectorAll('.experience-container');
+					const filterButton = document.getElementById('filterButton');
 
-					</article>
-					</section>
+					filterButtons.forEach(button => {
+					button.addEventListener('change', handleFilter);
+					});
+
+					function handleFilter(event) {
+						const selectedCategories = document.querySelectorAll('.checkboxes input[type="checkbox"]:checked');
+						const selectedCategoriesArray = Array.from(selectedCategories).map(checkbox => checkbox.dataset.filter);
+
+						experienceContainers.forEach(container => {
+							const containerCategory = container.querySelector('div[data-category]').dataset.category;
+
+							// Check if containerCategory matches any of the selectedCategories
+							const shouldShow = selectedCategoriesArray.includes(containerCategory) || !containerCategory;
+
+							if (shouldShow) {
+								container.style.display = "block"; // Show the container
+							} else {
+								container.style.display = "none"; // Hide the container
+							}
+						});
+					}
+					</script>
+			</section>
 		<section class="right">
 			<div>	
 				<img class="aboutme" src="Isabella.jpg" alt="A picture of Isabella">
@@ -108,6 +139,7 @@
 				<!-- <li><button class="lightswitch">&#127763;</button></li> -->
 				<li><a href="index.html"><h3>Home</h3></a></li>
 				<li><a href="projects.html"><h3>Projects</h3></a></li>
+				<li><a href="Resume Braam, Isabella.pdf"><h3>Resume PDF</h3></a></li>
 				</ul>
 			</section>
 		<script src="script.js"></script>
