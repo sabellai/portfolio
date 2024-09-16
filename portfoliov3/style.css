@@ -17,7 +17,7 @@ p, h3, h2, h1, header {
 		top: 70px;
 	}
 
-	section.right div:last-of-type {
+	div:last-of-type {
 		margin-bottom: 100px;
 	}
 
@@ -50,6 +50,10 @@ section.right, section.navbar {
 	background-color: #bf442b;
 }
 
+.primary h2, .primary h1 {
+	color: #a6ced8;
+}
+
 .secondary {
 	background-color: #33b7d1;
 }
@@ -69,6 +73,16 @@ p, h3 {
 	font-family: "Potta One", system-ui;
 	font-weight: 400;
 	font-style: normal;
+}
+
+a {
+	text-decoration: none;
+	color: #bf442b;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #fbc48e;
 }
 
 img, div {
@@ -131,7 +145,7 @@ section.navbar {
 		background-color: #FBC48E;
 		margin-right: 10px;
 		width: 210px;
-		margin-left: 80px;
+		margin-left: 20px;
 		height: 30px;
 		margin-top: 20px;
 	}
@@ -154,12 +168,21 @@ section.navbar {
 		width: 30px;
 		height: 30px;
 		display: inline-block;
+		margin-left: -30px;
+		margin-top: 2px;
 	}
 
 div#welcome {
 	margin: auto;
 	background-color: #bf442bCC;
+	width: 80%;
+	height: 40%;
 }
+
+	@font-face {
+		font-family: billo;
+		src: url(https://dl.dropbox.com/s/klv8tmajlqrb2xz/BILLO___.TTF);
+		}
 
 	header#header-text {
 		font-size: 104px;
@@ -167,11 +190,16 @@ div#welcome {
 		text-align: center;
 		color: #a6ced8;
 		text-shadow: 3px 3px #33b7d1;
-		font-family: "Monofett", monospace;
-		font-weight: 400;
-		font-style: normal;
+		font-family: billo;
 	}
 
+article.resume div {
+	width: 80%;
+	max-height: 60%;
+	overflow: auto;
+	margin: auto;
+	margin-top: 20px;
+}
 
 /* ===== Scrollbar CSS ===== */
   /* Firefox */
