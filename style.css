@@ -209,6 +209,9 @@ div#welcome {
 	background-color: #bf442bCC;
 	width: 80%;
 	height: 40%;
+	overflow: visible;
+	padding: 10px;
+	margin-top: 50px;
 }
 
 	@font-face {
@@ -218,7 +221,6 @@ div#welcome {
 
 	header#header-text {
 		font-size: 104px;
-		margin-top: 50px;
 		text-align: center;
 		color: #a6ced8;
 		text-shadow: 3px 3px #33b7d1;
